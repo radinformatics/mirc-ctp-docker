@@ -1,5 +1,6 @@
-# Singularity Builder
-This is a [packer](https://www.packer.io/docs/command-line/build.html) configuration to generate build instances (images) on different cloud platforms. I am just in the process of testing!
+# CTp Builder
+
+This will eventually be a [packer](https://www.packer.io/docs/command-line/build.html) configuration to generate build instances (images) on different cloud platforms for MIRC-CTP. I am just in the process of testing!
 
 
 	packer build builder.json 
@@ -30,5 +31,5 @@ This is a [packer](https://www.packer.io/docs/command-line/build.html) configura
 	Build 'googlecompute' finished.
 
 	==> Builds finished. The artifacts of successful builds are:
-	--> googlecompute: A disk image was created: singularity-hub-test-58151473-5671-eed2-1511-c8afdb680a36
+	--> googlecompute: A disk image was created: mirc-ctp-test-58151473-5671-eed2-1511-c8afdb680a36
 
