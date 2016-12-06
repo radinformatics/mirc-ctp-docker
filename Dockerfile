@@ -19,6 +19,7 @@ WORKDIR /code
 ADD . /code
 RUN tar -xzvf CTP.tar.gz
 RUN mv CTP /JavaPrograms
+RUN chmod 777 -R /JavaPrograms
 #RUN wget http://mirc.rsna.org/ImageIO/linux-x86_64.zip
 #RUN unzip linux-x86_64.zip
 #RUN mv linux-x86_64/* /JavaPrograms
