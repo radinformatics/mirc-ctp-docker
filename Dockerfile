@@ -16,8 +16,8 @@ RUN mkdir /JavaPrograms
 RUN mkdir /code
 WORKDIR /code
 ADD . /code
-RUN tar -xzvf CTP.tar.gz
-RUN mv CTP/* /JavaPrograms
+RUN tar -xzvf /code/CTP.tar.gz
+RUN mv /code/CTP/* /JavaPrograms
 RUN chmod 777 -R /JavaPrograms
 ENV CTP_HOME /JavaPrograms
 RUN echo "export CTP_HOME=/JavaPrograms" >> $HOME/.profile
