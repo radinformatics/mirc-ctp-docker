@@ -3,17 +3,17 @@
         maxThreads="20"
         port="1080"/>
     <Pipeline name="DICOM De-identification to Local Storage">
-        <ArchiveImportService
-            acceptFileObjects="no"
-            acceptXmlObjects="no"
-            acceptZipObjects="no"
-            class="org.rsna.ctp.stdstages.ArchiveImportService"
-            expandTARs="no"
-            fsName="DICOM Image Directory"
-            name="ArchiveImportService"
-            quarantine="quarantines/ArchiveImportService"
-            root="roots/ArchiveImportService"
-            treeRoot="archive"/>
+        <DirectoryImportService
+            name="DirectoryImportService"
+            class="org.rsna.ctp.stdstages.DirectoryImportService"
+            root="roots/DirectoryImportService”
+            import="import-directory"
+            interval="20000"
+            acceptDicomObjects="yes"
+            acceptXmlObjects="yes"
+            acceptZipObjects="yes"
+            acceptFileObjects="yes" 
+            quarantine="quarantines/DirectoryImportService" />
         <DicomImportService
             class="org.rsna.ctp.stdstages.DicomImportService"
             logConnections="no"
@@ -60,6 +60,6 @@
             name="FileStorageService"
             quarantine="quarantines/FileStorageService"
             returnStoredFile="no"
-            root="/JavaPrograms/roots/FileStorageService"/>
+            root="roots/FileStorageService"/>
     </Pipeline>
 </Configuration>
