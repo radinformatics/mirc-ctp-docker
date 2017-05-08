@@ -27,6 +27,7 @@ RUN cp /code/ctpService-ubuntu.sh /code/CTP/linux/ctpService-ubuntu.sh
 
 # Add our custom configuration files
 RUN cp /code/config.xml /JavaPrograms/config.xml
+RUN cp /code/DicomServiceAnonymizer.script /JavaPrograms/scripts/DicomServiceAnonymizer.script
 
 #RUN wget http://mirc.rsna.org/ImageIO/linux-x86_64.zip
 #RUN unzip linux-x86_64.zip

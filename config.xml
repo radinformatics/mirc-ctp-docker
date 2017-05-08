@@ -6,14 +6,14 @@
         <DirectoryImportService
             name="DirectoryImportService"
             class="org.rsna.ctp.stdstages.DirectoryImportService"
-            root="roots/DirectoryImportService”
+            root="roots/DirectoryImportService"
             import="import-directory"
             interval="20000"
             acceptDicomObjects="yes"
             acceptXmlObjects="yes"
             acceptZipObjects="yes"
             acceptFileObjects="yes" 
-            quarantine="quarantines/DirectoryImportService" />
+            quarantine="quarantines/DirectoryImportService"/>
         <DicomImportService
             class="org.rsna.ctp.stdstages.DicomImportService"
             logConnections="no"
@@ -21,16 +21,6 @@
             port="104"
             quarantine="quarantines/DicomImportService"
             root="roots/DicomImportService"/>
-        <HttpImportService
-            acceptFileObjects="no"
-            acceptXmlObjects="no"
-            acceptZipObjects="no"
-            class="org.rsna.ctp.stdstages.HttpImportService"
-            logConnections="no"
-            name="HttpImportService"
-            port="7778"
-            quarantine="quarantines/HttpImportService"
-            root="roots/HttpImportService"/>
         <DicomDecompressor
             class="org.rsna.ctp.stdstages.DicomDecompressor"
             name="DicomDecompressor"
@@ -53,7 +43,7 @@
             name="DicomAnonymizer"
             quarantine="quarantines/DicomAnonymizer"
             root="roots/DicomAnonymizer"
-            script="scripts/DicomAnonymizer.script"/>
+            script="scripts/DicomServiceAnonymizer.script"/>
         <FileStorageService
             class="org.rsna.ctp.stdstages.FileStorageService"
             fsNameTag="00080050"
