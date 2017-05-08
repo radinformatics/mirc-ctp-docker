@@ -34,4 +34,5 @@ RUN cp /code/DicomServiceAnonymizer.script /JavaPrograms/scripts/DicomServiceAno
 #RUN unzip linux-x86_64.zip
 #RUN mv linux-x86_64/* /JavaPrograms
 EXPOSE 1080
+EXPOSE 104
 CMD /bin/bash /code/start.sh
