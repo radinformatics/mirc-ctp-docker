@@ -18,7 +18,7 @@
             class="org.rsna.ctp.stdstages.DicomImportService"
             logConnections="no"
             name="DicomImportService"
-            port="7777"
+            port="104"
             quarantine="quarantines/DicomImportService"
             root="roots/DicomImportService"/>
         <HttpImportService
