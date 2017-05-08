@@ -13,6 +13,7 @@ RUN apt-get update && apt-get -y install git \
            unzip
 
 RUN mkdir /JavaPrograms
+RUN mkdir /JavaPrograms/scripts
 RUN mkdir /code
 WORKDIR /code
 ADD . /code
